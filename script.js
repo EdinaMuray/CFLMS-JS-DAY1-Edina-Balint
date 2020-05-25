@@ -174,3 +174,22 @@ document.write(x);
 str = "Please visit Microsoft!";
 var n = str.replace("Microsoft", "W3Schools");
 */
+
+
+/* Extra Ex */
+
+/* "Hey there, i am a javascript developer, and i live in vienna"
+
+
+the output to be this:
+
+"I am a javascript developer."
+
+
+Solution: */
+
+var extra = '\"Hey there, i am a javascript developer, and i live in vienna\"';
+console.log(extra.substring(12,39));
+
+
+
