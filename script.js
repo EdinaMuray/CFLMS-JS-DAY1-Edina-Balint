@@ -36,16 +36,14 @@ console.log(animal);
 
 
 
-/*var exotic = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
-var ar = exotic.split('/');
+
+
+
+var exotic = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+var ar = exotic.replace(/[/]/g, " ");
 document.write (ar);
 
-var temp = ar.split(', ');
-document.write(temp);*/
 
-/*var fruits = 'apple, orange, pear, banana, raspberry, peach';
-var ar = fruits.split(', ');
-console.log( ar );*/
 
 /* Advanced exercises*/
 
@@ -112,3 +110,67 @@ console.log(matrix[2][3]); // 27 //
 console.log(matrix[2][1]); // 0 //
 
 
+
+
+/* Challange ex1*/
+
+"Vienna is a nice city"
+
+vienna = [
+['Vienna', '0', '0', '0', '0'],
+['8', 'is', '9', '4', '1'],
+['7', '0', 'a', '27', '2'],
+['7', '4', '28', 'nice', '2'],
+['3', '10', '25','7', 'city']
+];
+
+console.log(vienna[0][0]);
+console.log(vienna[1][1]);
+console.log(vienna[2][2]);
+console.log(vienna[3][3]);
+console.log(vienna[4][4]);
+
+
+
+/* ex2 */
+
+
+/* Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$"properties $flow$down;$actions$flow$up". */
+
+
+/* Variation 1 */
+
+
+/* var str = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component\'s$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism\'s$promise$is$expressed$as$\"properties $flow$down;$actions$flow$up\".";
+var x = str.split("$");
+document.write(x);
+
+*/
+
+
+/* 
+
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+
+By default, the replace() method replaces only the first match:
+
+To replace all matches, use a regular expression with a /g flag (global match):
+
+*/
+
+
+
+
+
+
+var str = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component\'s$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism\'s$promise$is$expressed$as$\"properties $flow$down;$actions$flow$up\".";
+var x = str.replace(/[$]/g, " " );
+document.write(x);
+
+
+
+/*
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+*/
